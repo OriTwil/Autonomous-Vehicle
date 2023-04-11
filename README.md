@@ -1,2 +1,2 @@
 # Autonomous-Vehicle
-Information and workspace for Autonomous Vehicle competition.
+Tutorials and workspace for Autonomous Vehicle competition.

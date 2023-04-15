@@ -1075,6 +1075,12 @@ point_cloud_publisher_tutorial_SOURCE_DIR:STATIC=/home/szf/Autonomous-Vehicle/ca
 //The directory containing a CMake configuration file for pybind11_catkin.
 pybind11_catkin_DIR:PATH=/opt/ros/noetic/share/pybind11_catkin/cmake
 
+//Value Computed by CMake
+racecar_driver_BINARY_DIR:STATIC=/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/build/racecar_driver
+
+//Value Computed by CMake
+racecar_driver_SOURCE_DIR:STATIC=/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/src/racecar_driver
+
 //The directory containing a CMake configuration file for resource_retriever.
 resource_retriever_DIR:PATH=/opt/ros/noetic/share/resource_retriever/cmake
 
@@ -1456,7 +1462,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=15
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=16
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

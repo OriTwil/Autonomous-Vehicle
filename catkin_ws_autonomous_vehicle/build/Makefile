@@ -805,6 +805,19 @@ sensor_msgs_generate_messages_cpp/fast:
 .PHONY : sensor_msgs_generate_messages_cpp/fast
 
 #=============================================================================
+# Target rules for targets named racecar_driver_node
+
+# Build rule for target.
+racecar_driver_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 racecar_driver_node
+.PHONY : racecar_driver_node
+
+# fast build rule for target.
+racecar_driver_node/fast:
+	$(MAKE) -f racecar_driver/CMakeFiles/racecar_driver_node.dir/build.make racecar_driver/CMakeFiles/racecar_driver_node.dir/build
+.PHONY : racecar_driver_node/fast
+
+#=============================================================================
 # Target rules for targets named second_circle_pathplanning_gennodejs
 
 # Build rule for target.
@@ -4353,45 +4366,6 @@ rviz_imu_plugin_autogen/fast:
 	$(MAKE) -f imu_tool/rviz_imu_plugin/CMakeFiles/rviz_imu_plugin_autogen.dir/build.make imu_tool/rviz_imu_plugin/CMakeFiles/rviz_imu_plugin_autogen.dir/build
 .PHONY : rviz_imu_plugin_autogen/fast
 
-#=============================================================================
-# Target rules for targets named art_car_controller
-
-# Build rule for target.
-art_car_controller: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 art_car_controller
-.PHONY : art_car_controller
-
-# fast build rule for target.
-art_car_controller/fast:
-	$(MAKE) -f art_racecar/CMakeFiles/art_car_controller.dir/build.make art_racecar/CMakeFiles/art_car_controller.dir/build
-.PHONY : art_car_controller/fast
-
-#=============================================================================
-# Target rules for targets named art_racecar_gencfg
-
-# Build rule for target.
-art_racecar_gencfg: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 art_racecar_gencfg
-.PHONY : art_racecar_gencfg
-
-# fast build rule for target.
-art_racecar_gencfg/fast:
-	$(MAKE) -f art_racecar/CMakeFiles/art_racecar_gencfg.dir/build.make art_racecar/CMakeFiles/art_racecar_gencfg.dir/build
-.PHONY : art_racecar_gencfg/fast
-
-#=============================================================================
-# Target rules for targets named move_base_gencfg
-
-# Build rule for target.
-move_base_gencfg: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 move_base_gencfg
-.PHONY : move_base_gencfg
-
-# fast build rule for target.
-move_base_gencfg/fast:
-	$(MAKE) -f art_racecar/CMakeFiles/move_base_gencfg.dir/build.make art_racecar/CMakeFiles/move_base_gencfg.dir/build
-.PHONY : move_base_gencfg/fast
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -4454,6 +4428,7 @@ help:
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_eus"
 	@echo "... sensor_msgs_generate_messages_cpp"
+	@echo "... racecar_driver_node"
 	@echo "... second_circle_pathplanning_gennodejs"
 	@echo "... second_circle_pathplanning_generate_messages_py"
 	@echo "... second_circle_pathplanning_generate_messages_cpp"
@@ -4727,9 +4702,6 @@ help:
 	@echo "... map_msgs_generate_messages_lisp"
 	@echo "... map_msgs_generate_messages_eus"
 	@echo "... rviz_imu_plugin_autogen"
-	@echo "... art_car_controller"
-	@echo "... art_racecar_gencfg"
-	@echo "... move_base_gencfg"
 .PHONY : help
 
 

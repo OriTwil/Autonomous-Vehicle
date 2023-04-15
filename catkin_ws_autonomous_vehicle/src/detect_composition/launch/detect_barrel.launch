@@ -1,5 +1,0 @@
-<launch>
-    <node pkg="detect_composition" name="detect_node" type="detect_node" output="screen">
-
-    </node>
-</launch>

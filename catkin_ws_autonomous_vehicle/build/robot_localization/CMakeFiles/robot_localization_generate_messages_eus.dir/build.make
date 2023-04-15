@@ -66,20 +66,20 @@ robot_localization/CMakeFiles/robot_localization_generate_messages_eus: /home/sz
 
 /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/devel/share/roseus/ros/robot_localization/srv/SetDatum.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/devel/share/roseus/ros/robot_localization/srv/SetDatum.l: /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/src/robot_localization/srv/SetDatum.srv
-/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/devel/share/roseus/ros/robot_localization/srv/SetDatum.l: /opt/ros/noetic/share/geographic_msgs/msg/GeoPoint.msg
 /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/devel/share/roseus/ros/robot_localization/srv/SetDatum.l: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/devel/share/roseus/ros/robot_localization/srv/SetDatum.l: /opt/ros/noetic/share/geographic_msgs/msg/GeoPose.msg
+/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/devel/share/roseus/ros/robot_localization/srv/SetDatum.l: /opt/ros/noetic/share/geographic_msgs/msg/GeoPoint.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from robot_localization/SetDatum.srv"
 	cd /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/build/robot_localization && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/src/robot_localization/srv/SetDatum.srv -Igeographic_msgs:/opt/ros/noetic/share/geographic_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Iuuid_msgs:/opt/ros/noetic/share/uuid_msgs/cmake/../msg -p robot_localization -o /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/devel/share/roseus/ros/robot_localization/srv
 
 /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/devel/share/roseus/ros/robot_localization/srv/SetPose.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/devel/share/roseus/ros/robot_localization/srv/SetPose.l: /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/src/robot_localization/srv/SetPose.srv
 /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/devel/share/roseus/ros/robot_localization/srv/SetPose.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/devel/share/roseus/ros/robot_localization/srv/SetPose.l: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/devel/share/roseus/ros/robot_localization/srv/SetPose.l: /opt/ros/noetic/share/geometry_msgs/msg/PoseWithCovariance.msg
+/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/devel/share/roseus/ros/robot_localization/srv/SetPose.l: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/devel/share/roseus/ros/robot_localization/srv/SetPose.l: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/devel/share/roseus/ros/robot_localization/srv/SetPose.l: /opt/ros/noetic/share/geometry_msgs/msg/PoseWithCovarianceStamped.msg
 /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/devel/share/roseus/ros/robot_localization/srv/SetPose.l: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
-/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/devel/share/roseus/ros/robot_localization/srv/SetPose.l: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp code from robot_localization/SetPose.srv"
 	cd /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/build/robot_localization && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/src/robot_localization/srv/SetPose.srv -Igeographic_msgs:/opt/ros/noetic/share/geographic_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Iuuid_msgs:/opt/ros/noetic/share/uuid_msgs/cmake/../msg -p robot_localization -o /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/devel/share/roseus/ros/robot_localization/srv
 

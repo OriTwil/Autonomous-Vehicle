@@ -1,0 +1,7 @@
+The plugin for class ‘rviz_imu_plugin/Imu‘ failed to load.
+
+sudo apt-get install  ros-noetic-imu-tools
+
+
+roslaunch racecar Run_car.launch
+roslaunch racecar amcl_nav.launch

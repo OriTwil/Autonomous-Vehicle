@@ -1,0 +1,11 @@
+订阅的话题为/imu_data /encoder ，输出话题为/encoder_imu_odom
+
+/home/ros-autocar/ROS-Autocar/src/serial_imu/src/serial_imu.cpp
+     /IMU_data  改  /imu_data
+/home/ros-autocar/ROS-Autocar/src/serial_imu/src/sub_spec.cpp 
+     /IMU_data  改  /imu_data
+     
+roslaunch imu_launch imu_msg.launch
+rosrun encoder_driver  Encoder_vel.py
+roslaunch encoder_driver  wheel_odom.launch
+rostopic echo /encoder_imu_odom    

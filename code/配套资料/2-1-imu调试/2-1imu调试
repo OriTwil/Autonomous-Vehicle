@@ -1,0 +1,39 @@
+ls /dev/tty<tab>
+
+复制功能包 
+cd ~/ROS-Autocar
+catkin_make
+
+error:   serialConfig.cmake    
+solve:   
+	cd ~/ROS-Autocar/src        
+	git clone https://github.com/wjwwood/serial.git
+         
+	cd serial
+	make
+	make install
+	serial文件夹下，对CMakeLists.txt修改
+		## Include headers
+		include_directories(include)
+		## 改成
+		## Include headers
+		include_directories(include  ${catkin_INCLUDE_DIRS})	
+
+cd ~/ROS-Autocar
+catkin_make
+
+sudo chmod  +777 /dev/ttyUSB0
+roslaunch imu_launch  imu_msg.launch
+rostopic echo /IMU_data
+rostopic echo /imu_0x91_package 
+
+/home/ros-autocar/ROS-Autocar/src/serial_imu/src/serial_imu.cpp
+   ttyUSB0   base_link   /IMU_data
+
+roslaunch imu_launch  imu_rviz.launch
+       <node pkg="tf2_ros" type="static_transform_publisher" name="robot_tf_publisher"
+    args="0 0  0 0 0 0  map  base_link" />
+    
+rviz界面 加载imu   /IMU_data    
+    
+

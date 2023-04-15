@@ -1,0 +1,5 @@
+ source ./devel/setup.bash
+ roslaunch racecar Run_car.launch 
+ rosrun racecar racecar_teleop.py
+ 
+ rosrun rqt_graph rqt_graph 

@@ -1,0 +1,19 @@
+<launch>
+    <arg name="map_height_arg" value="600"/>
+    <arg name="map_width_arg" value="800"/>
+    <node pkg="get_scan_new" type="get_scan_new" name="get_scan_new"/>
+    <node pkg="detect_lidar" type="detect_lidar" name="detect_lidar" output="screen"/>
+    <node pkg="get_map" type="get_map" name="get_map" output="screen">
+        <param name="topic_name_cone" type="string" value="cones"/>
+        <param name="topic_name_move" type="string" value="location"/>
+        <param name="map_height" type="int" value="$(arg map_height_arg)"/>
+        <param name="map_width" type="int" value="$(arg map_width_arg)"/>
+        <param name="car_start_y" value="100"/>
+        <param name="car_start_x" value="570"/>
+        <param name="car_start_angle" value="1.570796325"/>
+        <param name="ratio" value="0.03"/>
+        <param name="map_path" value="/home/racecar/racecar_zzx/src/get_map/maps/"/>
+        <param name="map_name" value="map.png"/>
+        <param name="map_name_zzx" value="map_zzx.png"/>
+    </node>
+</launch>

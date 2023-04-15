@@ -1,0 +1,76 @@
+<launch>
+  <node name="second_pathplanning" pkg="second_circle_pathplanning" type="second_circle_pathplanning" output="screen">
+    <param name="xStart" value="50" type="int"/>
+    <param name="yStart" value="57" type="int"/>
+    <param name="xStop" value="50" type="int"/>
+    <param name="yStop" value="50" type="int"/>
+    <param name="dilate_kernel_size" value="3" type="int"/>
+    <param name="imagePath" value="/home/jaychen/my_pathplanning/cost_map.png" type="string"/>
+    <param name="mapPath" value="$(find second_circle_pathplanning)/txt/map_my.txt" type="string"/>
+    <param name="AstarframePath" value="$(find second_circle_pathplanning)/txt/AstarPathFrame.txt" type="string"/>
+    <param name="save_imagePath" value="$(find second_circle_pathplanning)/image/Astar.png" type="string"/>
+    <param name="weightA" value="0.1" type="double"/>
+    <param name="weightB" value="1" type="double"/>
+  </node>
+
+  <node name="record_pathplanning" pkg="second_circle_pathplanning" type="record_path" output="screen">
+    <param name="Combine_ratio" value="1.0" type="double"/>
+    <param name="RecordframePath" value="$(find second_circle_pathplanning)/txt/RecordPathFrame.txt" type="string"/>
+    <param name="SaveframePath" value="$(find second_circle_pathplanning)/txt/SavePathFrame.txt" type="string"/>
+  </node>
+  
+  <node name="traj_opti_node1" pkg="grad_traj_optimization" type="input_cj" output="screen">
+      <!-- set obstacles here  -->
+    <param name="framePath" value="$(find second_circle_pathplanning)/txt/SavePathFrame.txt" type="string"/>
+    <param name="obstacle_num" value="0" type="int"/>
+
+    <param name="obstacle_x_1" value="6.23309" type="double"/>
+    <param name="obstacle_y_1" value="3.3" type="double"/>
+    <param name="obstacle_x_2" value="-2.5" type="double"/>
+    <param name="obstacle_y_2" value="2.0" type="double"/>
+
+
+    <param name="alg" value="24" type="int"/>
+    <!--alg算法 不要改！ -->
+    <param name="offset" value="0.5" type="double"/>
+    <!-- 超调量,遇到障碍物的惩罚量 -->
+    <param name="retry_offset" value="0.2" type="double"/>
+    <param name="time_limit_1" value="0.04" type="double"/>
+    <param name="time_limit_2" value="0.06" type="double"/>
+    <param name="try_limit" value="0.01" type="double"/>
+    <param name="dt" value="0.2" type="double"/>
+
+    <param name="ws" value="200.0" type="double"/>
+    <!-- 顺滑性权重如果线出现畸变，就改这个参数 -->
+    <param name="wc" value="50.0" type="double"/>
+    <!-- 碰撞性权重-->
+
+    <!-- <param name="time" value="20.0" type="double"/> -->
+    <param name="segment_time" value="1.0" type="double"/>
+    <param name="mean_v" value="10" type="double"/>
+    <param name="init_time" value="0.0" type="double"/>
+
+    <param name="alpha" value="5.0" type="double"/>
+    <!-- 碰撞惩罚比例系数 -->
+    <param name="d0" value="1.0" type="double"/>
+    <param name="r" value="1.0" type="double"/>
+
+    <param name="alphav" value="1.0" type="double"/>
+    <!-- 速度最小比例系数 -->
+    <param name="v0" value="1" type="double"/>
+    <param name="rv" value="0.5" type="double"/>
+
+    <param name="alphaa" value="1.0" type="double"/>
+    <!-- 加速度最小比例系数 -->
+    <param name="a0" value="1" type="double"/>
+    <param name="ra" value="0.5" type="double"/>
+
+    <param name="bos" value="3.0" type="double"/>
+    <param name="vos" value="8.0" type="double"/>
+    <param name="aos" value="10.0" type="double"/>
+
+    <param name="gd_value" value="5.0" type="double"/>
+    <param name="gd_type" value="1" type="int"/>
+  </node>
+</launch>
+ 

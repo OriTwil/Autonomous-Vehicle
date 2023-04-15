@@ -1,0 +1,8 @@
+prefix=/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/devel
+
+Name: car_location
+Description: Description of car_location
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: message_runtime

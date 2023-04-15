@@ -1,0 +1,2 @@
+set(car_msgs_MESSAGE_FILES "/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/src/car_msgs/msg/YoloDetect.msg;/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/src/car_msgs/msg/LidarDetect.msg;/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/src/car_msgs/msg/DetectFinal.msg;/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/src/car_msgs/msg/car_location.msg")
+set(car_msgs_SERVICE_FILES "")

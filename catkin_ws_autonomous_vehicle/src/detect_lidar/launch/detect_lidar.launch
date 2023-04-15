@@ -1,0 +1,5 @@
+<launch>
+     <include file="$(find ls01b_v2)/launch/ls01b_v2.launch"></include>
+    <node pkg="get_scan_new" name="get_scan_new" type="get_scan_new" output="screen" required="true"></node>
+    <node pkg="detect_lidar" name="detect_lidar" type="detect_lidar" output="screen"></node>
+</launch>

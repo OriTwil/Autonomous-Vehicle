@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>test1</name>
+  <version>0.0.0</version>
+  <description>The test1 package</description>
+
+  <maintainer email="xlcbb@todo.todo">xlcbb</maintainer>
+
+  <license>TODO</license>
+
+  
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_export_depend>roscpp</build_export_depend>
+  <exec_depend>roscpp</exec_depend>
+
+  <build_depend>car_msgs</build_depend>
+  <exec_depend>car_msgs</exec_depend>
+
+  <export></export>
+</package>

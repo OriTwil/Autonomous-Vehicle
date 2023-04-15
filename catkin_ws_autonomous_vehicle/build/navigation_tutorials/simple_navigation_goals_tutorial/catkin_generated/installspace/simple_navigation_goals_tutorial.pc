@@ -1,0 +1,8 @@
+prefix=/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/install
+
+Name: simple_navigation_goals_tutorial
+Description: Description of simple_navigation_goals_tutorial
+Version: 0.2.3
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

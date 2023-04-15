@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/src/second_circle_pathplanning/include/second_circle_pathplanning/Astar.h
+iostream
+-
+vector
+-
+string
+-
+map
+-
+
+/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/src/second_circle_pathplanning/src/Astar.cpp
+second_circle_pathplanning/Astar.h
+/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/src/second_circle_pathplanning/src/second_circle_pathplanning/Astar.h
+functional
+-
+math.h
+-
+

@@ -1,0 +1,8 @@
+prefix=/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/install
+
+Name: point_cloud_publisher_tutorial
+Description: Description of point_cloud_publisher_tutorial
+Version: 0.2.3
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

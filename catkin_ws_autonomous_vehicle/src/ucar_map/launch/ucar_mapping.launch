@@ -1,0 +1,11 @@
+<launch>
+  <!-- base driver -->
+  <include file="$(find ucar_controller)/launch/base_driver.launch">
+  </include>
+  <!-- lidar driver -->
+  <include file="$(find ydlidar)/launch/ydlidar.launch"/>
+  <!-- cartographer launch -->
+  <include file="$(find ucar_map)/launch/cartographer_start.launch"/>
+  <node pkg="tf" type="static_transform_publisher" name="laser_to_imu"
+  args="0.0 0.0 0.0 0.0 0.0  0.0 /laser_frame /imu 100" />
+</launch>

@@ -1,0 +1,8 @@
+prefix=/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/install
+
+Name: encoder_driver
+Description: Description of encoder_driver
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib -lart_encoder_driver
+Requires: rospy std_msgs serial geometry_msgs tf tf2 tf2_geometry_msgs tf2_ros

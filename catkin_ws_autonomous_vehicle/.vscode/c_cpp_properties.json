@@ -1,0 +1,43 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/devel/include/**",
+        "/home/szf/ROS/catkin_ws/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/src/camera_init/include/**",
+        "/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/src/detect_composition/include/**",
+        "/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/src/detect_lidar/include/**",
+        "/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/src/first_circle_pathplanning/include/**",
+        "/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/src/get_map/include/**",
+        "/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/src/get_scan_new/include/**",
+        "/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/src/grad_traj_optimization/include/**",
+        "/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/src/imu_tool/imu_complementary_filter/include/**",
+        "/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/src/imu_tool/imu_filter_madgwick/include/**",
+        "/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/src/ls01x/include/**",
+        "/home/szf/ROS/catkin_ws/src/my_tf/include/**",
+        "/home/szf/ROS/catkin_ws/src/my_tf_caster/include/**",
+        "/home/szf/ROS/catkin_ws/src/my_tf_dynamic/include/**",
+        "/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/src/robot_localization/include/**",
+        "/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/src/robot_pose_ekf/include/**",
+        "/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/src/second_circle_pathplanning/include/**",
+        "/home/szf/ROS/catkin_ws/src/wtr_tasks_1/include/**",
+        "/home/szf/ROS/catkin_ws/src/wtr_tasks_2/include/**",
+        "/home/szf/ROS/catkin_ws/src/wtr_tasks_3/include/**",
+        "/home/szf/ROS/catkin_ws/src/wtr_tasks_4/include/**",
+        "/home/szf/ROS/catkin_ws/src/wtr_tasks_final/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

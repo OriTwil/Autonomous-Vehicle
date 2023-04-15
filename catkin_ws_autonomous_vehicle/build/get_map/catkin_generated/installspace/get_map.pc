@@ -1,0 +1,8 @@
+prefix=/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/install
+
+Name: get_map
+Description: Description of get_map
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

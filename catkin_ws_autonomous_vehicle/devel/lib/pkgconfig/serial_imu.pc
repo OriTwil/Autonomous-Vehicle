@@ -1,0 +1,8 @@
+prefix=/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/devel
+
+Name: serial_imu
+Description: Description of serial_imu
+Version: 0.0.0
+Cflags: -I/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/devel/include
+Libs: -L${prefix}/lib 
+Requires: roscpp rospy serial std_msgs message_runtime

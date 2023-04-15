@@ -1,0 +1,21 @@
+<launch>
+  <node name="second_pathplanning" pkg="second_circle_pathplanning" type="second_circle_pathplanning" output="screen">
+    <param name="xStart" value="50" type="int"/>
+    <param name="yStart" value="57" type="int"/>
+    <param name="xStop" value="50" type="int"/>
+    <param name="yStop" value="50" type="int"/>
+    <param name="dilate_kernel_size" value="3" type="int"/>
+    <param name="imagePath" value="/home/jaychen/my_pathplanning/cost_map.png" type="string"/>
+    <param name="mapPath" value="$(find second_circle_pathplanning)/txt/map_my.txt" type="string"/>
+    <param name="AstarframePath" value="$(find second_circle_pathplanning)/txt/AstarPathFrame.txt" type="string"/>
+    <param name="save_imagePath" value="$(find second_circle_pathplanning)/image/Astar.png" type="string"/>
+    <param name="weightA" value="0.1" type="double"/>
+    <param name="weightB" value="1" type="double"/>
+  </node>
+
+  <node name="record_pathplanning" pkg="second_circle_pathplanning" type="record_path" output="screen">
+    <param name="Combine_ratio" value="0.8" type="double"/>
+    <param name="RecordframePath" value="$(find second_circle_pathplanning)/txt/RecordPathFrame.txt" type="string"/>
+    <param name="SaveframePath" value="$(find second_circle_pathplanning)/txt/SavePathFrame.txt" type="string"/>
+  </node>
+</launch>

@@ -1,0 +1,8 @@
+prefix=/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/install
+
+Name: rviz_imu_plugin
+Description: Description of rviz_imu_plugin
+Version: 1.1.8
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: rviz

@@ -1,0 +1,7 @@
+<launch>
+	<include file="$(find imu_launch)/launch/imu_msg.launch" />
+	<node pkg="encoder_driver" type="Encoder_vel.py" name="encoder" />
+	<include file="$(find encoder_driver)/launch/wheel_odom.launch" />
+	<include file="$(find robot_pose_ekf)/launch/robot_pose_ekf.launch" />
+	<node pkg="car_location" type="car_location" name="car_location"/>
+</launch>

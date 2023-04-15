@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="test1" type="pure_pursuit" name="first_pathplanning" output="screen"> 
+        <rosparam file="$(find first_circle_pathplanning)/config/param.yaml" command="load"/>
+    </node>
+</launch>

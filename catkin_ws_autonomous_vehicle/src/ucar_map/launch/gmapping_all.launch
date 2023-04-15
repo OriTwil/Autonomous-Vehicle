@@ -1,0 +1,10 @@
+<launch>
+  <param name="/use_sim_time" value="false" />
+  <include file="$(find art_racecar)/launch/Run_car.launch" />
+  <!--<include file="$(find robot_pose_ekf)/robot_pose_ekf.launch" />-->
+  <include file="$(find ucar_map)/launch/gmapping.launch" />
+  <node name="rviz" pkg="rviz" type="rviz" required="true" 
+  args="-d $(find ucar_map)/cfg/gmapping.rviz"/>
+  <!--<node pkg="tf" type="static_transform_publisher" name="odom_to_base_footprint"
+    args="0.0 0.0 0.0 0.0 0.0 0.0 /odom /base_footprint 30" />-->
+</launch>

@@ -1,0 +1,2 @@
+bool second_flag
+bool optimization_flag

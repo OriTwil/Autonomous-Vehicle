@@ -1975,6 +1975,19 @@ get_map/fast:
 .PHONY : get_map/fast
 
 #=============================================================================
+# Target rules for targets named get_train_images
+
+# Build rule for target.
+get_train_images: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 get_train_images
+.PHONY : get_train_images
+
+# fast build rule for target.
+get_train_images/fast:
+	$(MAKE) -f camera_init/CMakeFiles/get_train_images.dir/build.make camera_init/CMakeFiles/get_train_images.dir/build
+.PHONY : get_train_images/fast
+
+#=============================================================================
 # Target rules for targets named camera_init
 
 # Build rule for target.
@@ -4518,6 +4531,7 @@ help:
 	@echo "... detect_lidar"
 	@echo "... MapHandler"
 	@echo "... get_map"
+	@echo "... get_train_images"
 	@echo "... camera_init"
 	@echo "... laser_scan_publisher"
 	@echo "... point_cloud_publisher"

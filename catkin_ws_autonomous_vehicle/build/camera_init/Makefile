@@ -168,6 +168,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+camera_init/CMakeFiles/get_train_images.dir/rule:
+	cd /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/build && $(MAKE) -f CMakeFiles/Makefile2 camera_init/CMakeFiles/get_train_images.dir/rule
+.PHONY : camera_init/CMakeFiles/get_train_images.dir/rule
+
+# Convenience name for target.
+get_train_images: camera_init/CMakeFiles/get_train_images.dir/rule
+
+.PHONY : get_train_images
+
+# fast build rule for target.
+get_train_images/fast:
+	cd /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/build && $(MAKE) -f camera_init/CMakeFiles/get_train_images.dir/build.make camera_init/CMakeFiles/get_train_images.dir/build
+.PHONY : get_train_images/fast
+
+# Convenience name for target.
 camera_init/CMakeFiles/camera_init.dir/rule:
 	cd /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/build && $(MAKE) -f CMakeFiles/Makefile2 camera_init/CMakeFiles/camera_init.dir/rule
 .PHONY : camera_init/CMakeFiles/camera_init.dir/rule
@@ -209,6 +224,33 @@ src/camera_init.cpp.s:
 	cd /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/build && $(MAKE) -f camera_init/CMakeFiles/camera_init.dir/build.make camera_init/CMakeFiles/camera_init.dir/src/camera_init.cpp.s
 .PHONY : src/camera_init.cpp.s
 
+src/get_train_images.o: src/get_train_images.cpp.o
+
+.PHONY : src/get_train_images.o
+
+# target to build an object file
+src/get_train_images.cpp.o:
+	cd /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/build && $(MAKE) -f camera_init/CMakeFiles/get_train_images.dir/build.make camera_init/CMakeFiles/get_train_images.dir/src/get_train_images.cpp.o
+.PHONY : src/get_train_images.cpp.o
+
+src/get_train_images.i: src/get_train_images.cpp.i
+
+.PHONY : src/get_train_images.i
+
+# target to preprocess a source file
+src/get_train_images.cpp.i:
+	cd /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/build && $(MAKE) -f camera_init/CMakeFiles/get_train_images.dir/build.make camera_init/CMakeFiles/get_train_images.dir/src/get_train_images.cpp.i
+.PHONY : src/get_train_images.cpp.i
+
+src/get_train_images.s: src/get_train_images.cpp.s
+
+.PHONY : src/get_train_images.s
+
+# target to generate assembly for a file
+src/get_train_images.cpp.s:
+	cd /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/build && $(MAKE) -f camera_init/CMakeFiles/get_train_images.dir/build.make camera_init/CMakeFiles/get_train_images.dir/src/get_train_images.cpp.s
+.PHONY : src/get_train_images.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -222,10 +264,14 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... get_train_images"
 	@echo "... camera_init"
 	@echo "... src/camera_init.o"
 	@echo "... src/camera_init.i"
 	@echo "... src/camera_init.s"
+	@echo "... src/get_train_images.o"
+	@echo "... src/get_train_images.i"
+	@echo "... src/get_train_images.s"
 .PHONY : help
 
 

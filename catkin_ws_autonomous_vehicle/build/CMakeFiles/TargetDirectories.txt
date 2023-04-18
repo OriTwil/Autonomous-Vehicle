@@ -263,6 +263,7 @@
 /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/build/camera_init/CMakeFiles/rebuild_cache.dir
 /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/build/camera_init/CMakeFiles/edit_cache.dir
 /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/build/camera_init/CMakeFiles/test.dir
+/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/build/camera_init/CMakeFiles/get_train_images.dir
 /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/build/camera_init/CMakeFiles/camera_init.dir
 /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/build/navigation_tutorials/laser_scan_publisher_tutorial/CMakeFiles/install/strip.dir
 /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/build/navigation_tutorials/laser_scan_publisher_tutorial/CMakeFiles/install/local.dir

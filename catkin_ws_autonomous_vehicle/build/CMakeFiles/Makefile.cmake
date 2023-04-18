@@ -706,6 +706,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "detect_lidar/CMakeFiles/detect_lidar.dir/DependInfo.cmake"
   "get_map/CMakeFiles/MapHandler.dir/DependInfo.cmake"
   "get_map/CMakeFiles/get_map.dir/DependInfo.cmake"
+  "camera_init/CMakeFiles/get_train_images.dir/DependInfo.cmake"
   "camera_init/CMakeFiles/camera_init.dir/DependInfo.cmake"
   "navigation_tutorials/laser_scan_publisher_tutorial/CMakeFiles/laser_scan_publisher.dir/DependInfo.cmake"
   "navigation_tutorials/point_cloud_publisher_tutorial/CMakeFiles/point_cloud_publisher.dir/DependInfo.cmake"

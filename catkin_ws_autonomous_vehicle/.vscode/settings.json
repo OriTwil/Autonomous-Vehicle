@@ -20,6 +20,11 @@
         "svd": "cpp",
         "geometry": "cpp",
         "jacobi": "cpp",
-        "iostream": "cpp"
-    }
+        "iostream": "cpp",
+        "memory": "cpp",
+        "shared_mutex": "cpp",
+        "memory_resource": "cpp",
+        "condition_variable": "cpp"
+    },
+    "cmake.sourceDirectory": "${workspaceFolder}/src/car_location"
 }

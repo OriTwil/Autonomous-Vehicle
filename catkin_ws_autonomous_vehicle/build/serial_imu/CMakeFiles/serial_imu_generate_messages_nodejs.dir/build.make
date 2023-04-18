@@ -60,15 +60,15 @@ serial_imu/CMakeFiles/serial_imu_generate_messages_nodejs: /home/szf/Autonomous-
 
 /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/devel/share/gennodejs/ros/serial_imu/msg/Imu_0x91_msg.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/devel/share/gennodejs/ros/serial_imu/msg/Imu_0x91_msg.js: /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/src/serial_imu/msg/Imu_0x91_msg.msg
-/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/devel/share/gennodejs/ros/serial_imu/msg/Imu_0x91_msg.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/devel/share/gennodejs/ros/serial_imu/msg/Imu_0x91_msg.js: /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/src/serial_imu/msg/Imu_data_package.msg
+/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/devel/share/gennodejs/ros/serial_imu/msg/Imu_0x91_msg.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from serial_imu/Imu_0x91_msg.msg"
 	cd /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/build/serial_imu && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/src/serial_imu/msg/Imu_0x91_msg.msg -Iserial_imu:/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/src/serial_imu/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p serial_imu -o /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/devel/share/gennodejs/ros/serial_imu/msg
 
 /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/devel/share/gennodejs/ros/serial_imu/msg/Imu_0x62_msg.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/devel/share/gennodejs/ros/serial_imu/msg/Imu_0x62_msg.js: /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/src/serial_imu/msg/Imu_0x62_msg.msg
-/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/devel/share/gennodejs/ros/serial_imu/msg/Imu_0x62_msg.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/devel/share/gennodejs/ros/serial_imu/msg/Imu_0x62_msg.js: /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/src/serial_imu/msg/Imu_data_package.msg
+/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/devel/share/gennodejs/ros/serial_imu/msg/Imu_0x62_msg.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from serial_imu/Imu_0x62_msg.msg"
 	cd /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/build/serial_imu && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/src/serial_imu/msg/Imu_0x62_msg.msg -Iserial_imu:/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/src/serial_imu/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p serial_imu -o /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/devel/share/gennodejs/ros/serial_imu/msg
 

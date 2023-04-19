@@ -78,17 +78,6 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -112,6 +101,17 @@ install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -168,21 +168,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-imu_tool/rviz_imu_plugin/CMakeFiles/rviz_imu_plugin.dir/rule:
-	cd /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/build && $(MAKE) -f CMakeFiles/Makefile2 imu_tool/rviz_imu_plugin/CMakeFiles/rviz_imu_plugin.dir/rule
-.PHONY : imu_tool/rviz_imu_plugin/CMakeFiles/rviz_imu_plugin.dir/rule
-
-# Convenience name for target.
-rviz_imu_plugin: imu_tool/rviz_imu_plugin/CMakeFiles/rviz_imu_plugin.dir/rule
-
-.PHONY : rviz_imu_plugin
-
-# fast build rule for target.
-rviz_imu_plugin/fast:
-	cd /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/build && $(MAKE) -f imu_tool/rviz_imu_plugin/CMakeFiles/rviz_imu_plugin.dir/build.make imu_tool/rviz_imu_plugin/CMakeFiles/rviz_imu_plugin.dir/build
-.PHONY : rviz_imu_plugin/fast
-
-# Convenience name for target.
 imu_tool/rviz_imu_plugin/CMakeFiles/rviz_generate_messages_eus.dir/rule:
 	cd /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/build && $(MAKE) -f CMakeFiles/Makefile2 imu_tool/rviz_imu_plugin/CMakeFiles/rviz_generate_messages_eus.dir/rule
 .PHONY : imu_tool/rviz_imu_plugin/CMakeFiles/rviz_generate_messages_eus.dir/rule
@@ -196,36 +181,6 @@ rviz_generate_messages_eus: imu_tool/rviz_imu_plugin/CMakeFiles/rviz_generate_me
 rviz_generate_messages_eus/fast:
 	cd /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/build && $(MAKE) -f imu_tool/rviz_imu_plugin/CMakeFiles/rviz_generate_messages_eus.dir/build.make imu_tool/rviz_imu_plugin/CMakeFiles/rviz_generate_messages_eus.dir/build
 .PHONY : rviz_generate_messages_eus/fast
-
-# Convenience name for target.
-imu_tool/rviz_imu_plugin/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule:
-	cd /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/build && $(MAKE) -f CMakeFiles/Makefile2 imu_tool/rviz_imu_plugin/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
-.PHONY : imu_tool/rviz_imu_plugin/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-visualization_msgs_generate_messages_cpp: imu_tool/rviz_imu_plugin/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : visualization_msgs_generate_messages_cpp
-
-# fast build rule for target.
-visualization_msgs_generate_messages_cpp/fast:
-	cd /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/build && $(MAKE) -f imu_tool/rviz_imu_plugin/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build.make imu_tool/rviz_imu_plugin/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build
-.PHONY : visualization_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-imu_tool/rviz_imu_plugin/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule:
-	cd /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/build && $(MAKE) -f CMakeFiles/Makefile2 imu_tool/rviz_imu_plugin/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
-.PHONY : imu_tool/rviz_imu_plugin/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-visualization_msgs_generate_messages_lisp: imu_tool/rviz_imu_plugin/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : visualization_msgs_generate_messages_lisp
-
-# fast build rule for target.
-visualization_msgs_generate_messages_lisp/fast:
-	cd /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/build && $(MAKE) -f imu_tool/rviz_imu_plugin/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build.make imu_tool/rviz_imu_plugin/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build
-.PHONY : visualization_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 imu_tool/rviz_imu_plugin/CMakeFiles/rviz_generate_messages_nodejs.dir/rule:
@@ -258,51 +213,6 @@ rviz_generate_messages_py/fast:
 .PHONY : rviz_generate_messages_py/fast
 
 # Convenience name for target.
-imu_tool/rviz_imu_plugin/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule:
-	cd /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/build && $(MAKE) -f CMakeFiles/Makefile2 imu_tool/rviz_imu_plugin/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule
-.PHONY : imu_tool/rviz_imu_plugin/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-visualization_msgs_generate_messages_eus: imu_tool/rviz_imu_plugin/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule
-
-.PHONY : visualization_msgs_generate_messages_eus
-
-# fast build rule for target.
-visualization_msgs_generate_messages_eus/fast:
-	cd /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/build && $(MAKE) -f imu_tool/rviz_imu_plugin/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build.make imu_tool/rviz_imu_plugin/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build
-.PHONY : visualization_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-imu_tool/rviz_imu_plugin/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/build && $(MAKE) -f CMakeFiles/Makefile2 imu_tool/rviz_imu_plugin/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule
-.PHONY : imu_tool/rviz_imu_plugin/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-visualization_msgs_generate_messages_nodejs: imu_tool/rviz_imu_plugin/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : visualization_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-visualization_msgs_generate_messages_nodejs/fast:
-	cd /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/build && $(MAKE) -f imu_tool/rviz_imu_plugin/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build.make imu_tool/rviz_imu_plugin/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build
-.PHONY : visualization_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-imu_tool/rviz_imu_plugin/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule:
-	cd /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/build && $(MAKE) -f CMakeFiles/Makefile2 imu_tool/rviz_imu_plugin/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
-.PHONY : imu_tool/rviz_imu_plugin/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-visualization_msgs_generate_messages_py: imu_tool/rviz_imu_plugin/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
-
-.PHONY : visualization_msgs_generate_messages_py
-
-# fast build rule for target.
-visualization_msgs_generate_messages_py/fast:
-	cd /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/build && $(MAKE) -f imu_tool/rviz_imu_plugin/CMakeFiles/visualization_msgs_generate_messages_py.dir/build.make imu_tool/rviz_imu_plugin/CMakeFiles/visualization_msgs_generate_messages_py.dir/build
-.PHONY : visualization_msgs_generate_messages_py/fast
-
-# Convenience name for target.
 imu_tool/rviz_imu_plugin/CMakeFiles/map_msgs_generate_messages_cpp.dir/rule:
 	cd /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/build && $(MAKE) -f CMakeFiles/Makefile2 imu_tool/rviz_imu_plugin/CMakeFiles/map_msgs_generate_messages_cpp.dir/rule
 .PHONY : imu_tool/rviz_imu_plugin/CMakeFiles/map_msgs_generate_messages_cpp.dir/rule
@@ -316,36 +226,6 @@ map_msgs_generate_messages_cpp: imu_tool/rviz_imu_plugin/CMakeFiles/map_msgs_gen
 map_msgs_generate_messages_cpp/fast:
 	cd /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/build && $(MAKE) -f imu_tool/rviz_imu_plugin/CMakeFiles/map_msgs_generate_messages_cpp.dir/build.make imu_tool/rviz_imu_plugin/CMakeFiles/map_msgs_generate_messages_cpp.dir/build
 .PHONY : map_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-imu_tool/rviz_imu_plugin/CMakeFiles/map_msgs_generate_messages_py.dir/rule:
-	cd /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/build && $(MAKE) -f CMakeFiles/Makefile2 imu_tool/rviz_imu_plugin/CMakeFiles/map_msgs_generate_messages_py.dir/rule
-.PHONY : imu_tool/rviz_imu_plugin/CMakeFiles/map_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-map_msgs_generate_messages_py: imu_tool/rviz_imu_plugin/CMakeFiles/map_msgs_generate_messages_py.dir/rule
-
-.PHONY : map_msgs_generate_messages_py
-
-# fast build rule for target.
-map_msgs_generate_messages_py/fast:
-	cd /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/build && $(MAKE) -f imu_tool/rviz_imu_plugin/CMakeFiles/map_msgs_generate_messages_py.dir/build.make imu_tool/rviz_imu_plugin/CMakeFiles/map_msgs_generate_messages_py.dir/build
-.PHONY : map_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-imu_tool/rviz_imu_plugin/CMakeFiles/map_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/build && $(MAKE) -f CMakeFiles/Makefile2 imu_tool/rviz_imu_plugin/CMakeFiles/map_msgs_generate_messages_nodejs.dir/rule
-.PHONY : imu_tool/rviz_imu_plugin/CMakeFiles/map_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-map_msgs_generate_messages_nodejs: imu_tool/rviz_imu_plugin/CMakeFiles/map_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : map_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-map_msgs_generate_messages_nodejs/fast:
-	cd /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/build && $(MAKE) -f imu_tool/rviz_imu_plugin/CMakeFiles/map_msgs_generate_messages_nodejs.dir/build.make imu_tool/rviz_imu_plugin/CMakeFiles/map_msgs_generate_messages_nodejs.dir/build
-.PHONY : map_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 imu_tool/rviz_imu_plugin/CMakeFiles/rviz_generate_messages_cpp.dir/rule:
@@ -393,6 +273,21 @@ map_msgs_generate_messages_lisp/fast:
 .PHONY : map_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
+imu_tool/rviz_imu_plugin/CMakeFiles/map_msgs_generate_messages_py.dir/rule:
+	cd /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/build && $(MAKE) -f CMakeFiles/Makefile2 imu_tool/rviz_imu_plugin/CMakeFiles/map_msgs_generate_messages_py.dir/rule
+.PHONY : imu_tool/rviz_imu_plugin/CMakeFiles/map_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+map_msgs_generate_messages_py: imu_tool/rviz_imu_plugin/CMakeFiles/map_msgs_generate_messages_py.dir/rule
+
+.PHONY : map_msgs_generate_messages_py
+
+# fast build rule for target.
+map_msgs_generate_messages_py/fast:
+	cd /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/build && $(MAKE) -f imu_tool/rviz_imu_plugin/CMakeFiles/map_msgs_generate_messages_py.dir/build.make imu_tool/rviz_imu_plugin/CMakeFiles/map_msgs_generate_messages_py.dir/build
+.PHONY : map_msgs_generate_messages_py/fast
+
+# Convenience name for target.
 imu_tool/rviz_imu_plugin/CMakeFiles/map_msgs_generate_messages_eus.dir/rule:
 	cd /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/build && $(MAKE) -f CMakeFiles/Makefile2 imu_tool/rviz_imu_plugin/CMakeFiles/map_msgs_generate_messages_eus.dir/rule
 .PHONY : imu_tool/rviz_imu_plugin/CMakeFiles/map_msgs_generate_messages_eus.dir/rule
@@ -406,6 +301,36 @@ map_msgs_generate_messages_eus: imu_tool/rviz_imu_plugin/CMakeFiles/map_msgs_gen
 map_msgs_generate_messages_eus/fast:
 	cd /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/build && $(MAKE) -f imu_tool/rviz_imu_plugin/CMakeFiles/map_msgs_generate_messages_eus.dir/build.make imu_tool/rviz_imu_plugin/CMakeFiles/map_msgs_generate_messages_eus.dir/build
 .PHONY : map_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+imu_tool/rviz_imu_plugin/CMakeFiles/map_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/build && $(MAKE) -f CMakeFiles/Makefile2 imu_tool/rviz_imu_plugin/CMakeFiles/map_msgs_generate_messages_nodejs.dir/rule
+.PHONY : imu_tool/rviz_imu_plugin/CMakeFiles/map_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+map_msgs_generate_messages_nodejs: imu_tool/rviz_imu_plugin/CMakeFiles/map_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : map_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+map_msgs_generate_messages_nodejs/fast:
+	cd /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/build && $(MAKE) -f imu_tool/rviz_imu_plugin/CMakeFiles/map_msgs_generate_messages_nodejs.dir/build.make imu_tool/rviz_imu_plugin/CMakeFiles/map_msgs_generate_messages_nodejs.dir/build
+.PHONY : map_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+imu_tool/rviz_imu_plugin/CMakeFiles/rviz_imu_plugin.dir/rule:
+	cd /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/build && $(MAKE) -f CMakeFiles/Makefile2 imu_tool/rviz_imu_plugin/CMakeFiles/rviz_imu_plugin.dir/rule
+.PHONY : imu_tool/rviz_imu_plugin/CMakeFiles/rviz_imu_plugin.dir/rule
+
+# Convenience name for target.
+rviz_imu_plugin: imu_tool/rviz_imu_plugin/CMakeFiles/rviz_imu_plugin.dir/rule
+
+.PHONY : rviz_imu_plugin
+
+# fast build rule for target.
+rviz_imu_plugin/fast:
+	cd /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/build && $(MAKE) -f imu_tool/rviz_imu_plugin/CMakeFiles/rviz_imu_plugin.dir/build.make imu_tool/rviz_imu_plugin/CMakeFiles/rviz_imu_plugin.dir/build
+.PHONY : rviz_imu_plugin/fast
 
 # Convenience name for target.
 imu_tool/rviz_imu_plugin/CMakeFiles/rviz_imu_plugin_autogen.dir/rule:
@@ -565,27 +490,22 @@ help:
 	@echo "... depend"
 	@echo "... install/strip"
 	@echo "... list_install_components"
-	@echo "... test"
-	@echo "... rviz_imu_plugin"
 	@echo "... rviz_generate_messages_eus"
-	@echo "... visualization_msgs_generate_messages_cpp"
-	@echo "... visualization_msgs_generate_messages_lisp"
 	@echo "... install"
 	@echo "... rviz_generate_messages_nodejs"
 	@echo "... install/local"
 	@echo "... rviz_generate_messages_py"
-	@echo "... visualization_msgs_generate_messages_eus"
-	@echo "... visualization_msgs_generate_messages_nodejs"
-	@echo "... visualization_msgs_generate_messages_py"
 	@echo "... map_msgs_generate_messages_cpp"
+	@echo "... test"
 	@echo "... rebuild_cache"
-	@echo "... edit_cache"
-	@echo "... map_msgs_generate_messages_py"
-	@echo "... map_msgs_generate_messages_nodejs"
 	@echo "... rviz_generate_messages_cpp"
 	@echo "... rviz_generate_messages_lisp"
 	@echo "... map_msgs_generate_messages_lisp"
+	@echo "... map_msgs_generate_messages_py"
 	@echo "... map_msgs_generate_messages_eus"
+	@echo "... map_msgs_generate_messages_nodejs"
+	@echo "... edit_cache"
+	@echo "... rviz_imu_plugin"
 	@echo "... rviz_imu_plugin_autogen"
 	@echo "... rviz_imu_plugin_autogen/mocs_compilation.o"
 	@echo "... rviz_imu_plugin_autogen/mocs_compilation.i"

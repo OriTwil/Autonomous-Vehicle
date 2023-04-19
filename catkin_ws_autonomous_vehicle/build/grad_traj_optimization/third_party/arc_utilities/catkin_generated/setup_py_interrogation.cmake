@@ -1,0 +1,7 @@
+set(arc_utilities_SETUP_PY_SETUP_MODULE "setuptools")
+set(arc_utilities_SETUP_PY_VERSION "0.0.1")
+set(arc_utilities_SETUP_PY_SCRIPTS "")
+set(arc_utilities_SETUP_PY_PACKAGES "arc_utilities")
+set(arc_utilities_SETUP_PY_PACKAGE_DIRS "src/arc_utilities")
+set(arc_utilities_SETUP_PY_MODULES "")
+set(arc_utilities_SETUP_PY_MODULE_DIRS "")

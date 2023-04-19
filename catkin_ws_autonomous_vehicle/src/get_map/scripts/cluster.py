@@ -216,4 +216,4 @@ if __name__ == '__main__':
     # map_optimize = rospy.Subscriber('/finish_first_round',Bool,MapCallBack)
     # map_finished = rospy.Publisher('/map_finished',Bool)
     # rospy.spin()
-    MapCallBack(True)
+    MapCallBack(True)ERR_CONNECTION_RESET

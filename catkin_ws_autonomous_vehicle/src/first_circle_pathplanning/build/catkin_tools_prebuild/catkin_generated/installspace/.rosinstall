@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/src/first_circle_pathplanning/install/setup.sh

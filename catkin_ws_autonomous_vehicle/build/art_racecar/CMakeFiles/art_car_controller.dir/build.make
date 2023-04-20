@@ -80,12 +80,6 @@ art_car_controller_EXTERNAL_OBJECTS =
 /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/devel/lib/art_racecar/art_car_controller: art_racecar/CMakeFiles/art_car_controller.dir/src/art_car_controller.cpp.o
 /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/devel/lib/art_racecar/art_car_controller: art_racecar/CMakeFiles/art_car_controller.dir/build.make
 /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/devel/lib/art_racecar/art_car_controller: /opt/ros/noetic/lib/libmove_base.so
-/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/devel/lib/art_racecar/art_car_controller: /opt/ros/noetic/lib/libdynamic_reconfigure_config_init_mutex.so
-/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/devel/lib/art_racecar/art_car_controller: /usr/lib/liborocos-kdl.so
-/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/devel/lib/art_racecar/art_car_controller: /usr/lib/liborocos-kdl.so
-/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/devel/lib/art_racecar/art_car_controller: /opt/ros/noetic/lib/libtf2_ros.so
-/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/devel/lib/art_racecar/art_car_controller: /opt/ros/noetic/lib/libactionlib.so
-/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/devel/lib/art_racecar/art_car_controller: /opt/ros/noetic/lib/libmessage_filters.so
 /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/devel/lib/art_racecar/art_car_controller: /opt/ros/noetic/lib/libroscpp.so
 /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/devel/lib/art_racecar/art_car_controller: /usr/lib/x86_64-linux-gnu/libpthread.so
 /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/devel/lib/art_racecar/art_car_controller: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
@@ -96,7 +90,7 @@ art_car_controller_EXTERNAL_OBJECTS =
 /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/devel/lib/art_racecar/art_car_controller: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
 /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/devel/lib/art_racecar/art_car_controller: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
 /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/devel/lib/art_racecar/art_car_controller: /opt/ros/noetic/lib/libxmlrpcpp.so
-/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/devel/lib/art_racecar/art_car_controller: /opt/ros/noetic/lib/libtf2.so
+/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/devel/lib/art_racecar/art_car_controller: /opt/ros/noetic/lib/libdynamic_reconfigure_config_init_mutex.so
 /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/devel/lib/art_racecar/art_car_controller: /opt/ros/noetic/lib/libroscpp_serialization.so
 /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/devel/lib/art_racecar/art_car_controller: /opt/ros/noetic/lib/librostime.so
 /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/devel/lib/art_racecar/art_car_controller: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0

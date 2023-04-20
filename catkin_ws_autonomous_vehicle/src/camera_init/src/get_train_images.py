@@ -23,7 +23,7 @@ while (flag):
 
     # 如果按下s键，保存当前帧的图像
     if k == ord('s'):
-        cv2.imwrite("/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/images/" + str(index) + ".jpg", frame)
+        cv2.imwrite("/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/datasets/test/" + str(index) + ".jpg", frame)
         print("save" + str(index) + ".jpg successfuly!")
         print("-------------------------")
         index += 1

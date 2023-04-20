@@ -47,7 +47,7 @@ int main(int argc, char** argv)
         // 如果按下s键，保存当前帧的图像
         if (waitKey(1) == 's')
         {
-            imwrite("/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/images/" + std::to_string(index) + ".jpg", frame);
+            imwrite("/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/datasets/test/" + std::to_string(index) + ".jpg", frame);
             ROS_INFO_STREAM("Save image " << index << " successfully!");
             index++;
         }

@@ -6,7 +6,7 @@ workspace for Autonomous Vehicle competition.
 * April 22nd, completed experiments 1-9 and need to test the effectiveness of deep learning visual object recognition.
 
 ## Buglists
-* (switch to yolov3) To obtain pre-trained weights, use:
+* (switch to Yolov3) To obtain pre-trained weights, use:
 ```makefile
 wget https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_optimal/yolov3.weights
 ```

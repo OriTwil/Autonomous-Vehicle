@@ -34,6 +34,16 @@ tf2_ros/static_transform_broadcaster.h
 imu_complementary_filter/complementary_filter.h
 /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/src/imu_tool/imu_complementary_filter/include/imu_complementary_filter/imu_complementary_filter/complementary_filter.h
 
+/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/src/imu_tool/imu_complementary_filter/src/complementary_filter.cpp
+imu_complementary_filter/complementary_filter.h
+/home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/src/imu_tool/imu_complementary_filter/src/imu_complementary_filter/complementary_filter.h
+cstdio
+-
+cmath
+-
+iostream
+-
+
 /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/src/imu_tool/imu_complementary_filter/src/complementary_filter_ros.cpp
 imu_complementary_filter/complementary_filter_ros.h
 /home/szf/Autonomous-Vehicle/catkin_ws_autonomous_vehicle/src/imu_tool/imu_complementary_filter/src/imu_complementary_filter/complementary_filter_ros.h

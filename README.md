@@ -1,7 +1,7 @@
 # Autonomous-Vehicle
 workspace for Autonomous Vehicle competition.
 
-## Update
+## Update history
 * April 15th, compiled some of the function packages and prepared for experiments.
 * April 22nd, completed experiments 1-9 and need to test the effectiveness of deep learning visual object recognition.
 
